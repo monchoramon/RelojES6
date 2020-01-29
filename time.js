@@ -132,11 +132,11 @@ class tiempo {
         
         var hora_actual = this.get_zona_horaria().getHours()
         
-        if (hora_actual > 12) {
+        if (  hora_actual > 12 ) {
 
             var hora_formato_12_horas = 12 - (parseInt(24 - hora_actual))
 
-            if( hora_formato_12_horas < 12 ){
+            if( hora_formato_12_horas < 10 ){
                 this.div_hora.innerHTML = '0'+hora_formato_12_horas
             }else{
                 this.div_hora.innerHTML = hora_formato_12_horas
