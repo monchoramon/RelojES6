@@ -136,7 +136,7 @@ class tiempo {
 
             var hora_formato_12_horas = 12 - (parseInt(24 - hora_actual))
 
-            if( hora_formato_12_horas < 10 ){
+            if( hora_formato_12_horas < 100 ){
                 this.div_hora.innerHTML = '0'+hora_formato_12_horas
             }else{
                 this.div_hora.innerHTML = hora_formato_12_horas
