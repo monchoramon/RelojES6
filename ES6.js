@@ -30,7 +30,8 @@ const numer_ar = [
     19
 ]
 
-const elementos_arr = () =>{
+const elementos_arr = () => {
+
     numer_ar.map((numero) => {
 
         //var aux = numero;
@@ -62,3 +63,10 @@ const elementos_arr = () =>{
 //elementos_arr();
 //console.log( numer_ar );
 
+const variable_constante = () => {
+    const pi = 3.1416
+    this.pi = 0
+    console.log( this.pi )
+}
+
+variable_constante()
